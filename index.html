@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cyle</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="index.css">
+
+<body>
+
+    <!-- Header fixed to top. Links to different areas of "main". -->
+    <header class="w3-container w3-border w3-blue-grey w3-center" id="header">
+        <h2><a href="#">Home</a>
+            <a href="#photos">Photos</a>
+            <a href="#interests">Interests</a>
+            <a href="#work">Work</a>
+        </h2>
+    </header>
+
+    <!-- Four main content areas of page: Home, Photos, Interests, and Work. -->
+    <main class="w3-container w3-blue-grey" id="main">
+
+        <!-- Main: Home -->
+        <div class="w3-container w3-margin-top">
+            <div class="w3-cell-row">
+                <div class="w3-cell" id="mainpiccell">
+                    <img src="photos/profile.png" class="w3-round">
+                </div>
+                <div class="w3-container w3-cell w3-rest w3-cell-middle w3-border w3-round">
+                    <p id="quote">Life is a culmination of all experiences, good and bad; yet when the sum of life is
+                        calculated, it's nothing short of beautiful.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Main: Photos, composed of three rows. -->
+        <div class="w3-container w3-margin-top">
+            <h1 class="w3-container w3-text-white w3-dark-grey w3-round hoverhand" onclick="photocollapse()">Photos</h1>
+        </div>
+
+        <!-- Container for three rows -->
+        <div class="w3-container contentsection" id="photos">
+
+            <!-- Photos row 1 -->
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/amh.JPG" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Amherst, OH</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/bly.JPG" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Gubernatorial Candidate Joe Blystone!</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/carr.jpg" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Fish Festival - Vermilion, OH</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Photos row 2 -->
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/ccrop.JPG" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Christmas Sunday</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/eat.JPG" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Out to eat!</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/house.JPG" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Touring a Classic House</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photos row 3 -->
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/trai.JPG" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Tractor Ride with the Family</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/puk.JPG" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Mark Pukita for US Senate!</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-col m4">
+                    <div class="w3-card w3-grey w3-round">
+                        <img src="photos/outs.JPG" style="width:100%" class="w3-image w3-round">
+                        <div class="w3-container">
+                            <h5 class="w3-text-white">Relaxing Fall Evening Outside</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Close container for three rows -->
+        </div>
+
+        <!-- Main: Interests, composed of three cell rows. -->
+        <div class="w3-container w3-margin-top">
+            <h1 class="w3-container w3-text-white w3-dark-grey w3-round hoverhand" onclick="interestcollapse()">
+                Interests</h1>
+        </div>
+
+        <!-- Container for three cell rows -->
+        <div class="w3-container contentsection" id="interests">
+
+            <!-- Interests cell row 1 -->
+            <div class="w3-container w3-cell-row w3-margin-top">
+                <div class="w3-cell cell-margin" style="width:25%">
+                    <div class="w3-card w3-round w3-grey">
+                        <img src="photos/ftmyers.jpg" class="w3-image w3-round">
+
+                        <div class="w3-container">
+                            <h5>Ft. Myers Florida</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-cell w3-display-container w3-card w3-cell-top w3-round" id="ibackground1">
+                    <div class="w3-container w3-center">
+                        <h2 class="w3-card w3-round">Outdoors</h2>
+                    </div>
+                    <div class="w3-container w3-cell-row">
+                        <div class="w3-display-left w3-container w3-center">
+                            <h4 style="font-size:x-large"><strong>At the end of the day,<br>the world
+                                    is meant to be<br>experienced.</h4></strong>
+                        </div>
+                        <div class="w3-display-bottomright w3-container w3-margin-bottom">
+                            <a href="https://www.shoresandislands.com/"><strong>Shores & Islands Ohio</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests cell row 2 -->
+            <div class="w3-container w3-cell-row w3-margin-top">
+                <div class="w3-cell cell-margin" style="width:25%">
+                    <div class="w3-card w3-round w3-grey">
+                        <img src="photos/chessqueen.png" class="w3-image w3-round">
+
+                        <div class="w3-container">
+                            <h5>Chess</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-cell w3-display-container w3-cell-top w3-card w3-round" id="ibackground2">
+                    <div class="w3-container w3-center">
+                        <h2 class="w3-card w3-round">Competition</h2>
+                    </div>
+                    <div class="w3-display-left w3-container w3-center">
+                        <div class="w3-container">
+                            <a href="https://new.uschess.org/">
+                                <h3>Chess</h3>
+                            </a>
+                            <a href="https://www.halowaypoint.com/halo-infinite">
+                                <h3>Halo</h3>
+                            </a>
+                            <a href="https://dominion.games/">
+                                <h3>Dominion</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests cell row 3 -->
+            <div class="w3-container w3-cell-row w3-margin-top">
+                <div class="w3-cell cell-margin" style="width:25%">
+                    <div class="w3-card w3-round w3-grey">
+                        <img src="photos/music.jpg" class="w3-image w3-round">
+
+                        <div class="w3-container">
+                            <h5>Tunes</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-cell w3-display-container w3-cell-top w3-card w3-round" id="ibackground3">
+                    <div class="w3-container w3-center">
+                        <h2 class="w3-card w3-round">Music</h2>
+                    </div>
+                    <div class="w3-display-left">
+                        <div>
+                        <div class="w3-container w3-cell w3-cell-middle">
+                            <audio id="audio1">
+                                <source src="files/audio/01 Am I The Only One.m4a">
+                            </audio>
+                            <button onclick="track1();playPause()">Play/Pause</button><button onclick="stop()" style="margin-left:8px">Stop</button>
+                        </div>
+                        <div class="w3-cell w3-cell-middle">
+                            <h3>Am I the Only One - Aaron Lewis</h3>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="w3-container w3-cell w3-cell-middle">
+                            <audio id="audio2">
+                                <source src="files/audio/01 Friendships.m4a">
+                            </audio>
+                            <button onclick="track2();playPause()">Play/Pause</button><button onclick="stop()" style="margin-left:8px">Stop</button>
+                        </div>
+                        <div class="w3-cell w3-cell-middle">
+                            <h3>Friendships - Pascal Letoublon</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w3-container w3-cell w3-cell-middle">
+                            <audio id="audio3">
+                                <source src="files/audio/06 Drivin Thru the Night.m4a">
+                            </audio>
+                            <button onclick="track3();playPause()">Play/Pause</button><button onclick="stop()" style="margin-left:8px">Stop</button>
+                        </div>
+                        <div class="w3-cell w3-cell-middle">
+                            <h3>Drivin Thru the Night - Petit Biscuit</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w3-container w3-cell w3-cell-middle">
+                            <audio id="audio4">
+                                <source src="files/audio/08 Rescue Me.m4a">
+                            </audio>
+                            <button onclick="track4();playPause()">Play/Pause</button><button onclick="stop()" style="margin-left:8px">Stop</button>
+                        </div>
+                        <div class="w3-cell w3-cell-middle">
+                            <h3>Rescue Me - St. Lucia</h3>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Close container for three cell rows -->
+        </div>
+
+        <!-- Main: Work -->
+        <div class="w3-container w3-margin-top" id="workheader">
+            <h1 class="w3-container w3-text-white w3-dark-grey w3-round hoverhand" onclick="workcollapse()">Work</h1>
+        </div>
+
+        <!-- Container for work content -->
+        <div class="w3-container contentsection" id="work">
+            <div class="w3-container w3-cell-row cell-margin w3-margin-top">
+                <div class="w3-container w3-cell w3-black leftside" style="width:50%" id="workpar">
+                    <p>Work is any collection of activities, for which the completion of those activities, will benefit
+                        somebody, in some way. Never undermine what you do, and recognize the value it brings to others.
+                    </p>
+                    <p>I specialize in taking technically demanding applications and IT related topics, and making them
+                        easy for their end users to understand. Training successfully on any subject requires an in
+                        depth, conceptual understanding oh how and why it works. Therefore, regardless of whether you
+                        need training on a specific application, or need one developed, I am equipped for either
+                        request.</p>
+                </div>
+
+                <div class="w3-container w3-center w3-cell w3-black" style="width:25%">
+                    <div class="w3-container w3-blue-grey w3-margin-top w3-round">
+                        <h2>Skills</h2>
+                    </div>
+                    <h3>Javascript</h3>
+                    <h3>HTML/CSS</h3>
+                    <h3>React</h3>
+                    <h3>Node.js</h3>
+                    <h3>SQL & MongoDB</h3>
+                </div>
+                <div class=" w3-container w3-center w3-cell w3-black rightside" style="width:25%">
+                    <div class="w3-container w3-blue-grey w3-margin-top w3-round">
+                        <h2>Links & Downloads</h2>
+                    </div>
+                    <a href="files/Resume-Nov-2021.pdf" download target="_blank">
+                        <h3>Download Resume</h3>
+                    </a>
+                    <a href="https://github.com/cmac2617" target="_blank">
+                        <h3>Github</h3>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cyle-mcgregor-40098313a/" target="_blank">
+                        <h3>LinkedIn</h3>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Hidden footer to hide behind visible footer, and let the bottom of page be above the top of the visible footer -->
+        <footer class="w3-container w3-margin-top" id="hiddenfooter">
+            <h2>Home</h2>
+        </footer>
+
+    </main>
+
+    <!-- Footer fixed to bottom -->
+    <footer class="w3-container w3-border w3-blue-grey w3-center" id="footer">
+        <h2><img src="photos/email.PNG" style="margin-right:5px"><a href="mailto:cylemcgregor@yahoo.com">E-mail me</a>
+        </h2>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

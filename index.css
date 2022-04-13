@@ -1,0 +1,76 @@
+#header {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    }
+
+body {
+    height: 100%;
+}
+
+#main {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.leftside {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.rightside {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; 
+}
+
+#ibackground1 {
+background-image: url(photos/sunset.gif);
+background-size: cover;
+background-position: 25%;
+}
+
+#ibackground2 {
+    background-image: url(photos/halo.jpg);
+    background-size: cover;
+    /* background-position: 40%; */
+}   
+#ibackground3 {
+    background-image: url(photos/red.jpg);
+    background-size: cover;
+    /* background-position: 50%; */
+    }
+.cell-margin {
+    padding-right: 16px;
+}
+
+
+#workpar {
+    font-size: 20px;
+}
+
+.hoverhand {
+    cursor: pointer;
+}
+
+.contentsection {
+    display: none;
+}
+
+#mainpiccell {
+    padding-right: 16px;
+}
+
+#quote {
+    font-size: 28px;
+    text-align: center;
+}
+#hiddenfooter {
+    display: hidden;
+}
